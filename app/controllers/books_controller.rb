@@ -14,8 +14,10 @@ class BooksController < ApplicationController
   end
 
   def show
+    @newbook = Book.new
     @book = Book.find(params[:id])
     @user = @book.user
+
   end
 
   def destroy
