@@ -1,3 +1,7 @@
+<% if flash[:notice] %>
+  <p class="notice text-success"><%= flash[:notice] %></p>
+<% end %>
+
 <%= render "books/list", {user: @user, book: @newbook} %>
 
 <div class="col-8 offset-1">
