@@ -69,3 +69,10 @@ gem "devise"
 gem "bootstrap", "~> 4.5"
 gem "jquery-rails"
 gem "font-awesome-sass","~> 5.13"
+
+group :test do
+  gem "capybara", ">= 2.15"
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
+end
