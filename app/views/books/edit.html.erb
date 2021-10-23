@@ -3,6 +3,8 @@
     <div class="mx-auto col-5 px-3">
 
       <h1>Editing Book</h1>
+      <%= render "books/error", {book: @book} %>
+
       <%= form_with model: @book, local:true do |f| %>
         <div class="form mb-3">
           <%= f.label :title %><br/>

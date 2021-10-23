@@ -3,6 +3,8 @@
     <div class="mx-auto col-5 px-3">
 
       <h1>User info</h1>
+      <%= render "users/error", {user:@user} %>
+      
       <%= form_with model:@user, local:true do |f| %>
         <div class="form mb-3">
           <%= f.label :name %>
